@@ -145,6 +145,10 @@ jobs:
 
             echo "caches cleanup done!"
           fi
+      - name: 增加额外的源
+        run: |
+          cd ./wrt/
+          echo "src-git smpackage https://github.com/kenzok8/small-package" >> feeds.conf.default
 
       - name: Update Feeds
         run: |
