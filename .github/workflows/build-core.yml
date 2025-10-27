@@ -148,7 +148,7 @@ jobs:
       - name: 增加额外的源
         run: |
           cd ./wrt/
-          echo "src-git smpackage https://github.com/kenzok8/small-package" >> feeds.conf.default
+          echo "src-git AlanPackage https://github.com/xinruoyusixian/alan-package" >> feeds.conf.default
 
       - name: Update Feeds
         run: |
